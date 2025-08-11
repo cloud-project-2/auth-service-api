@@ -11,6 +11,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image with tag $CODEBUILD_RESOLVED_SOURCE_VERSION...
+      - cd auth-service
       - docker build --build-arg VERSION=$PROJECT_VERSION -t $IMAGE_REPO_URL:$CODEBUILD_RESOLVED_SOURCE_VERSION .
 
   post_build:
