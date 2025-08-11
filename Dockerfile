@@ -1,5 +1,5 @@
 # Use official Node.js base image
-FROM node:18
+FROM 835474150232.dkr.ecr.us-east-1.amazonaws.com/node-base-images:18-slim
 
 # Set working directory
 WORKDIR /usr/src/app
